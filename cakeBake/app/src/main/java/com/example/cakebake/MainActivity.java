@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                         if(passwordtxt.getText().toString().equals("123"))
                         {
                             UCheck.uChk=1;
-                            Intent toAdminform=new Intent(MainActivity.this, Admin.class);
+                            Intent toAdminform=new Intent(MainActivity.this,Admin.class);
                             startActivity(toAdminform);
                         }
                     }
@@ -74,13 +74,13 @@ public class MainActivity extends AppCompatActivity {
                                 if(userRole.equals("Normal"))
                                 {
                                     UCheck.uChk=0;
-                                    Intent customerHome=new Intent(MainActivity.this,frmUserForm.class);
+                                    Intent customerHome=new Intent(MainActivity.this,AllCakes.class);
                                     startActivity(customerHome);
                                 }
                                 else if(userRole.equals("Admin"))
                                 {
                                     UCheck.uChk=1;
-                                    Intent adminHome=new Intent(MainActivity.this, Admin.class);
+                                    Intent adminHome=new Intent(MainActivity.this,Admin.class);
                                     startActivity(adminHome);
                                 }
                             }

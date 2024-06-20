@@ -103,11 +103,12 @@ public class CakeBakeDB extends SQLiteOpenHelper {
         }
     }
 
-    public Cursor userCheckForLogin(String Lemail, String Lpassword) {
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor userFound = db.rawQuery("SELECT * FROM userinfo WHERE userLoginName = ? AND userPassword = ?", new String[]{Lemail, Lpassword});
-        userFound.close();
-        return userFound;
+    public Cursor userCheckForLogin(String Lemail, String Lpassword)
+    {
+        SQLiteDatabase db=this.getWritableDatabase();
+        Cursor loginSerach=db.rawQuery("SELECT * FROM "+tblUser+" WHERE "+tblUsername+"='"+Lemail.toLowerCase()+"' AND "+tblUserpassword+"='"+Lpassword+"'",null);
+        return loginSerach;
+
     }
 
     public boolean addnewCupCake(String IID,String IName ,String IFlavour,String ICategory,String IQTY,String IPrice)
@@ -220,25 +221,55 @@ public class CakeBakeDB extends SQLiteOpenHelper {
         return cakelist;
     }
 
-    //calling Icecream Info
+    //calling Cupcake Info
 
     public Cursor GetcupCakeInfo(String cakename)
     {
         SQLiteDatabase db = this.getWritableDatabase();
 
-        String catgetstr="SELECT * FROM cupCakeInfo WHERE cupCakeName='" + cakename.trim() + "'" ;
+
+        String catgetstr = "SELECT * FROM cupCakeInfo WHERE cupCakeName=?";
 
         Toast.makeText(context, catgetstr, Toast.LENGTH_LONG).show();
-        String[] selectionArgs = {cakename};
+        String[] selectionArgs = {cakename.trim()};
+        Toast.makeText(context, catgetstr, Toast.LENGTH_LONG).show();
 
         return db.rawQuery(catgetstr, selectionArgs);
-
-       // Cursor selectedCAT = db.rawQuery(catgetstr, null);
-
-       // Toast.makeText(context, selectedCAT.getString(0), Toast.LENGTH_LONG).show();
-
-        //return selectedCAT;
+//
+//        Cursor selectedCAT = db.rawQuery(catgetstr, null);
+//
+//        Toast.makeText(context, selectedCAT.getString(0), Toast.LENGTH_LONG).show();
+//
+//        return selectedCAT;
     }
+
+    public Cursor GetCakeInfo(String cakename) {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        // Define the columns you want to retrieve
+        String[] projection = {
+                tblcupCakeFlavour,
+                tblcupCakeCategory,
+                tblcupCakeqty,
+                tblcupCakeprice
+        };
+
+        // Specify the selection criteria
+        String selection = tblcupCakeName + " = ?";
+        String[] selectionArgs = {cakename};
+
+        // Query the database
+        return db.query(
+                tblcupCakeInfo,           // The table to query
+                projection,               // The array of columns to return (null to return all)
+                selection,                // The columns for the WHERE clause
+                selectionArgs,            // The values for the WHERE clause
+                null,                     // don't group the rows
+                null,                     // don't filter by row groups
+                null                      // don't order the rows
+        );
+    }
+
 
     public Integer DelatecupCake(String delcakename)
     {
@@ -246,14 +277,14 @@ public class CakeBakeDB extends SQLiteOpenHelper {
         return db.delete(tblcupCakeInfo,"cupCakeName=?",new String[]{delcakename});
     }
 
-    public boolean upadatecakeInfo(String cakeFlav,String iceCat,String iceQty,String IcePrice)
+    public boolean upadatecakeInfo(String cakeFlav,String cakeCat,String cakeQty,String cakePrice)
     {
         SQLiteDatabase db=this.getWritableDatabase();
         ContentValues contVal=new ContentValues();
         contVal.put(tblcupCakeFlavour,cakeFlav);
-        contVal.put(tblcupCakeCategory,iceCat);
-        contVal.put(tblcupCakeqty,iceQty);
-        contVal.put(tblcupCakeprice,IcePrice);
+        contVal.put(tblcupCakeCategory,cakeCat);
+        contVal.put(tblcupCakeqty,cakeQty);
+        contVal.put(tblcupCakeprice,cakePrice);
         db.update(tblcupCakeInfo,contVal,"cupCakeName=?",new String[]{cakeFlav});
 
         return true;

@@ -5,16 +5,18 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".cakebakeDelete">
+    android:background="#433F3F"
+    tools:context=".UpDelete">
 
     <Spinner
-        android:id="@+id/spnIceName"
+        android:id="@+id/spncakeName"
         android:layout_width="372dp"
         android:layout_height="34dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="17dp"
-        android:layout_marginBottom="564dp" />
+        android:layout_marginBottom="564dp"
+        android:background="#8C8A8A" />
 
     <TextView
         android:id="@+id/textView20"
@@ -25,135 +27,150 @@
         android:layout_marginEnd="132dp"
         android:layout_marginBottom="612dp"
         android:text="CupCake Name"
+        android:textColor="#FFF7F7"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="150dp"
         android:layout_marginBottom="526dp"
-        android:text="CupCake ID"
+        android:text="Cupcake ID"
+        android:textColor="#FFF7F7"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="121dp"
         android:layout_marginBottom="420dp"
-        android:text="CupCake Flavour"
+        android:text="Ice Cream Flavour"
+        android:textColor="#FFF7F7"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="115dp"
         android:layout_marginBottom="230dp"
-        android:text="CupCake Quantity"
+        android:text="Cupcake Quantity"
+        android:textColor="#FFF7F7"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="132dp"
         android:layout_marginBottom="144dp"
-        android:text="CupCake Price"
+        android:text="Cupcake Price"
+        android:textColor="#FFF7F7"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="114dp"
         android:layout_marginBottom="324dp"
-        android:text="CupCake Category"
+        android:text="Ice Cream Category"
+        android:textColor="#FFF7F7"
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/txtIceUpID"
+        android:id="@+id/txtcakeUpID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="99dp"
         android:layout_marginBottom="466dp"
+        android:background="#8C8A8A"
         android:ems="10"
         android:inputType="text" />
 
     <EditText
-        android:id="@+id/txtIceupfalvour"
+        android:id="@+id/txtcakeupfalvour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="101dp"
         android:layout_marginBottom="365dp"
+        android:background="#8C8A8A"
         android:ems="10"
         android:inputType="text" />
 
     <EditText
-        android:id="@+id/txtIceupCat"
+        android:id="@+id/txtcakeupCat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="98dp"
         android:layout_marginBottom="266dp"
+        android:background="#8C8A8A"
         android:ems="10"
         android:inputType="text" />
 
     <EditText
-        android:id="@+id/txticeupqty"
+        android:id="@+id/txtcakeupqty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="90dp"
         android:layout_marginBottom="176dp"
+        android:background="#8C8A8A"
         android:ems="10"
         android:inputType="text" />
 
     <Button
-        android:id="@+id/btnIceDelete"
+        android:id="@+id/btnDelete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="236dp"
         android:layout_marginBottom="29dp"
-        android:text="Delete" />
+        android:background="#300303"
+        android:text="Delete"
+        android:textColor="#FFF7F7" />
 
     <Button
-        android:id="@+id/btnIceUpdate"
+        android:id="@+id/btnUpdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="85dp"
         android:layout_marginBottom="29dp"
-        android:text="Update" />
+        android:background="#009688"
+        android:text="Update"
+        android:textColor="#FFF7F7" />
 
     <EditText
-        android:id="@+id/txtIceupPrice"
+        android:id="@+id/txtcakeupPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="97dp"
         android:layout_marginBottom="89dp"
+        android:background="#8C8A8A"
         android:ems="10"
         android:inputType="text" />
 </RelativeLayout>

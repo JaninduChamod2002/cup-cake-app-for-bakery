@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#433F3F"
     tools:context=".addNewcakebake">
 
     <TextView
@@ -15,7 +16,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="298dp"
         android:layout_marginBottom="597dp"
-        android:text="Cup Cake ID" />
+        android:text="Cup Cake ID"
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/textView14"
@@ -25,7 +27,10 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="342dp"
         android:layout_marginBottom="537dp"
-        android:text="Name" />
+        android:text="Name"
+        android:textColor="#FFFFFF" />
+
+    <!-- Add android:textColor="#FFFFFF" to each EditText and TextView -->
 
     <EditText
         android:id="@+id/txtcakeName"
@@ -35,8 +40,10 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="21dp"
         android:layout_marginBottom="528dp"
+        android:background="#8C8A8A"
         android:ems="10"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textColor="#FFFFFF" />
 
     <EditText
         android:id="@+id/txtcakeflavour"
@@ -46,8 +53,10 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="22dp"
         android:layout_marginBottom="462dp"
+        android:background="#8C8A8A"
         android:ems="10"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textColor="#FFFFFF" />
 
     <EditText
         android:id="@+id/txtcakeCategory"
@@ -57,8 +66,10 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="22dp"
         android:layout_marginBottom="388dp"
+        android:background="#8C8A8A"
         android:ems="10"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textColor="#8C8A8A" />
 
     <EditText
         android:id="@+id/txtcakeQTY"
@@ -68,8 +79,10 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="21dp"
         android:layout_marginBottom="316dp"
+        android:background="#8C8A8A"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="number"
+        android:textColor="#FFFFFF" />
 
     <EditText
         android:id="@+id/txtcakeprice"
@@ -79,8 +92,10 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="23dp"
         android:layout_marginBottom="242dp"
+        android:background="#8C8A8A"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="number"
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/textView15"
@@ -90,7 +105,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="335dp"
         android:layout_marginBottom="479dp"
-        android:text="Flavour" />
+        android:text="Flavour"
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/textView16"
@@ -100,7 +116,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="323dp"
         android:layout_marginBottom="401dp"
-        android:text="Category" />
+        android:text="Category"
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/textView17"
@@ -110,7 +127,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="327dp"
         android:layout_marginBottom="326dp"
-        android:text="Quantity" />
+        android:text="Quantity"
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/textView18"
@@ -120,7 +138,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="347dp"
         android:layout_marginBottom="254dp"
-        android:text="Price" />
+        android:text="Price"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/btnAddCupcake"
@@ -130,7 +149,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="35dp"
         android:layout_marginBottom="162dp"
-        android:text="ADD" />
+        android:text="ADD"
+        android:textColor="#FFFFFF" />
 
     <Spinner
         android:id="@+id/spncakeCAT"

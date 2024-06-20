@@ -5,10 +5,21 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#433F3F"
     tools:context=".Admin">
 
+    <ImageButton
+        android:id="@+id/btnNewIceCat"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="277dp"
+        app:srcCompat="@drawable/cat" />
+
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView41"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -16,11 +27,11 @@
         android:layout_marginEnd="259dp"
         android:layout_marginBottom="231dp"
         android:text="Add New Category"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView42"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -28,7 +39,7 @@
         android:layout_marginEnd="47dp"
         android:layout_marginBottom="233dp"
         android:text="Upadate / Delete"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="16sp" />
 
     <TextView
@@ -37,8 +48,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="121dp"
-        android:layout_marginBottom="542dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="673dp"
         android:text="Admin Dashboard"
         android:textColor="#000000"
         android:textSize="24sp" />
@@ -62,7 +73,7 @@
         android:layout_marginEnd="277dp"
         android:layout_marginBottom="389dp"
         android:text="Add New User"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="16sp" />
 
     <ImageButton
@@ -85,18 +96,18 @@
         android:layout_marginBottom="390dp"
         android:text="Add New Cup Cake
 "
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="18sp" />
 
     <ImageButton
-        android:id="@+id/btnNewIceCat"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/btnview"
+        android:layout_width="96dp"
+        android:layout_height="83dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="271dp"
-        android:layout_marginBottom="256dp"
-        app:srcCompat="@drawable/cat" />
+        android:layout_marginEnd="171dp"
+        android:layout_marginBottom="113dp"
+        app:srcCompat="@drawable/viewcakes" />
 
     <ImageButton
         android:id="@+id/btnUpDel"
@@ -106,6 +117,18 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="80dp"
         android:layout_marginBottom="271dp"
-        app:srcCompat="@drawable/iceup" />
+        app:srcCompat="@drawable/updatedelete" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="77dp"
+        android:text="View all cakes"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
 
 </RelativeLayout>

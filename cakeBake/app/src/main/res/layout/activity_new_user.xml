@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8A9C4"
-    tools:context=".cakebakeNewUser" >
+    android:background="#433F3F"
+    tools:context=".cakebakeNewUser">
 
     <ImageView
         android:id="@+id/imageView"
@@ -26,7 +26,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="309dp"
         android:layout_marginBottom="445dp"
-        android:text="User Name" />
+        android:text="User Name"
+        android:textColor="#FFF7F7" />
 
     <TextView
         android:id="@+id/textView7"
@@ -36,7 +37,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="325dp"
         android:layout_marginBottom="387dp"
-        android:text="Address" />
+        android:text="Address"
+        android:textColor="#FFF7F7" />
 
     <TextView
         android:id="@+id/textView8"
@@ -46,7 +48,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="279dp"
         android:layout_marginBottom="329dp"
-        android:text="Contact Number" />
+        android:text="Contact Number"
+        android:textColor="#FFF7F7" />
 
     <EditText
         android:id="@+id/txtuserInfoName"
@@ -56,8 +59,12 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="439dp"
+        android:background="#8C8A8A"
         android:ems="10"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textColor="#FFF7F7" />
+
+    <!-- Add android:textColor="#FFF7F7" to each EditText -->
 
     <EditText
         android:id="@+id/txtuserInfoAddress"
@@ -67,8 +74,10 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="22dp"
         android:layout_marginBottom="381dp"
+        android:background="#8C8A8A"
         android:ems="10"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textColor="#FFF7F7" />
 
     <EditText
         android:id="@+id/txtuserInfoContact"
@@ -78,8 +87,10 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="320dp"
+        android:background="#8C8A8A"
         android:ems="10"
-        android:inputType="phone" />
+        android:inputType="phone"
+        android:textColor="#FFF7F7" />
 
     <TextView
         android:id="@+id/textView9"
@@ -89,7 +100,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="307dp"
         android:layout_marginBottom="260dp"
-        android:text="Login Name" />
+        android:text="Login Name"
+        android:textColor="#FFF7F7" />
 
     <EditText
         android:id="@+id/txtuserLogin"
@@ -99,8 +111,10 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="18dp"
         android:layout_marginBottom="240dp"
+        android:background="#8C8A8A"
         android:ems="10"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:textColor="#FFF7F7" />
 
     <TextView
         android:id="@+id/textView10"
@@ -110,7 +124,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="323dp"
         android:layout_marginBottom="180dp"
-        android:text="Password" />
+        android:text="Password"
+        android:textColor="#FFF7F7" />
 
     <EditText
         android:id="@+id/txtuserPass"
@@ -120,8 +135,10 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="18dp"
         android:layout_marginBottom="174dp"
+        android:background="#8C8A8A"
         android:ems="10"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textColor="#FFF7F7" />
 
     <TextView
         android:id="@+id/textView11"
@@ -132,7 +149,7 @@
         android:layout_marginEnd="92dp"
         android:layout_marginBottom="526dp"
         android:text="New User"
-        android:textColor="#000000"
+        android:textColor="#FFF7F7"
         android:textSize="28sp" />
 
     <Button
@@ -143,7 +160,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="38dp"
         android:layout_marginBottom="36dp"
-        android:text="Create" />
+        android:text="Create"
+        android:textColor="#FFF7F7" />
 
     <RadioGroup
         android:layout_width="384dp"
@@ -159,7 +177,8 @@
             android:layout_width="143dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Admin User" />
+            android:text="Admin User"
+            android:textColor="#FFF7F7" />
 
         <RadioButton
             android:id="@+id/rbNormal"
@@ -167,7 +186,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:checked="true"
-            android:text="Normal User" />
+            android:text="Normal User"
+            android:textColor="#FFF7F7" />
     </RadioGroup>
 
 </RelativeLayout>

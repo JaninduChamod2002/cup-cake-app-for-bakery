@@ -20,7 +20,7 @@ public class cakebakeNewUser extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_frm_new_user);
+        setContentView(R.layout.activity_new_user);
 
         myDB=new CakeBakeDB(this);
         UCheck=new userCheck();

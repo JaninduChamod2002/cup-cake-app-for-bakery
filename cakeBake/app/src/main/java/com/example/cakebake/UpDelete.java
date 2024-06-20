@@ -1,5 +1,6 @@
 package com.example.cakebake;
 
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -16,7 +17,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import java.util.ArrayList;
 
-public class cakebakeDelete extends AppCompatActivity {
+public class UpDelete extends AppCompatActivity {
 
     CakeBakeDB myDB;
 
@@ -26,27 +27,27 @@ public class cakebakeDelete extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_frmup_del);
+        setContentView(R.layout.activity_up_delete);
 
         Spinner Icenamespn;
         EditText IceupIDtxt,Iceupfalvourtxt,IceupCattxt,iceupqtytxt;
         Button Icedelbtn,IceUpbtn;
 
-        IceupIDtxt=findViewById(R.id.txtIceUpID);
-        Iceupfalvourtxt=findViewById(R.id.txtIceupfalvour);
-        IceupCattxt=findViewById(R.id.txtIceupCat);
-        iceupqtytxt=findViewById(R.id.txticeupqty);
+        IceupIDtxt=findViewById(R.id.txtcakeUpID);
+        Iceupfalvourtxt=findViewById(R.id.txtcakeupfalvour);
+        IceupCattxt=findViewById(R.id.txtcakeupCat);
+        iceupqtytxt=findViewById(R.id.txtcakeupqty);
 
-        Icenamespn=findViewById(R.id.spnIceName);
+        Icenamespn=findViewById(R.id.spncakeName);
 
-        Icedelbtn=findViewById(R.id.btnIceDelete);
-        IceUpbtn=findViewById(R.id.btnIceUpdate);
+        Icedelbtn=findViewById(R.id.btnDelete);
+        IceUpbtn=findViewById(R.id.btnUpdate);
 
         myDB=new CakeBakeDB(this);
 
         //########################  SET Catagory IDs IN TO SPINNER  ###########################
         ArrayList<String> allIceNames = myDB.getcupCakeNames();
-        ArrayAdapter<String> IDApaptor = new ArrayAdapter<String>(cakebakeDelete.this, com.google.android.material.R.layout.support_simple_spinner_dropdown_item, allIceNames);
+        ArrayAdapter<String> IDApaptor = new ArrayAdapter<String>(UpDelete.this, com.google.android.material.R.layout.support_simple_spinner_dropdown_item, allIceNames);
         Icenamespn.setAdapter(IDApaptor);
         //######################  END OF PUTTING VALUES TO SPINNER  ######################
 
@@ -64,7 +65,7 @@ public class cakebakeDelete extends AppCompatActivity {
                 Integer delInfo=myDB.DelatecupCake(Icenamespn.getSelectedItem().toString());
                 if(delInfo>0)
                 {
-                    Toast.makeText(cakebakeDelete.this, "Selected icecream Deleted!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(UpDelete.this, "Selected icecream Deleted!", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -75,11 +76,11 @@ public class cakebakeDelete extends AppCompatActivity {
                 boolean isUpdate=myDB.upadatecakeInfo(Iceupfalvourtxt.getText().toString(),IceupCattxt.getText().toString(),iceupqtytxt.getText().toString(),iceupqtytxt.getText().toString());
                 if(isUpdate)
                 {
-                    Toast.makeText(cakebakeDelete.this, "Ice cram Info Updated!!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(UpDelete.this, "Ice cram Info Updated!!", Toast.LENGTH_SHORT).show();
                 }
                 else
                 {
-                    Toast.makeText(cakebakeDelete.this, "Problem in Info Update", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(UpDelete.this, "Problem in Info Update", Toast.LENGTH_SHORT).show();
                 }
 
             }
